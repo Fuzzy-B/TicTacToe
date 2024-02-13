@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+
+#board { 
+    background-color: aqua;
+    height: 92vw;
+    width: 92vw; 
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(3, 30vw);
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell {
+    display: flex;
+    background-color: rgb(61, 58, 58);
+    height: 30vw;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 30vw;
+    
+}
+
+.cell:hover {
+    background-color: red;
+}
+
